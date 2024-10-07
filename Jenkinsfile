@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the GitHub repository containing Terraform scripts
-                git 'https://github.com/prathikss185/terraform-training.git'
+                git branch: 'dev', url: 'https://github.com/prathikss185/terraform-training.git'
             }
         }
 
