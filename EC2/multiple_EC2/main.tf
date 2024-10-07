@@ -10,7 +10,7 @@ variable "instance_names" {
 
 resource "aws_instance" "example_instance" {
   count         = length(var.instance_names)
-  ami           = "ami-07d9b9ddc6cd8dd30"  # Example AMI ID (Amazon Linux 2)
+  ami           = "ami-0866a3c8686eaeeba"  # Example AMI ID (Amazon Linux 2)
   instance_type = "t2.micro"                # Example instance type (micro)
 
   tags = {
