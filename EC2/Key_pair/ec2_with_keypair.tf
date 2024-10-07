@@ -6,7 +6,7 @@ resource "aws_key_pair" "deployer" {
 resource "aws_instance" "web1" {
   ami           = "ami-05a5f6298acdb05b6"
   instance_type = "t2.micro"
-  key_name = "deployer-key"
+  key_name = "projectkey1"
   depends_on = [aws_key_pair.deployer]
 
   tags = {
