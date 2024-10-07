@@ -38,7 +38,7 @@ resource "aws_security_group" "example_sg" {
 }
 
 resource "aws_instance" "web1" {
-  ami           = "ami-05a5f6298acdb05b6"
+  ami           = "ami-0e86e20dae9224db8"
   instance_type = "t2.micro"
   #key_name = "deployer-key"
   key_name      = aws_key_pair.deployer1.key_name
