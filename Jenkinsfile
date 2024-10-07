@@ -4,8 +4,7 @@ pipeline {
     environment {
         // Define the path to the Terraform configuration directory
         TF_CONFIG_PATH = "S3_module_Demo_Source_Local/config/non-prod/s3/"
-        TF_CONFIG_PATH = "EC2/Single_EC2/"
-    }
+        }
 
     stages {
         stage('Checkout') {
