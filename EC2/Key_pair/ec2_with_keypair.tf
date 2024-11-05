@@ -1,10 +1,10 @@
 resource "aws_key_pair" "deployer" {
-  key_name   = "Ubuntu2KP"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0g+jYPLJinH/7tWAKkkUKV/nXKoEC/niuEBQzU/PFqEHvC6fNyU22yu0QiJ2Rh1XiLuKoACPjq0dA+bpv+kY3TQYl5q0xx7+QD/sb+S69FvP2nBEHqGihuffBad3YishM9zH+gYckNzXKjqcIZu5ft7SPWE41AvMq7GssoiEXt4Ebaf/W5LccMbvmaL0hNgUNGGf9VB+QrtsBG0+2mRdkPIxaQ0j95GhHAfh8/iZIvLNsup3mhCRSSRMrRYeJJuEJYkDrb41PciNESzTkhhXCGuMbOnoZ4+wJ7MCLklnCxEA/oC2byHxRcJCLDq9dcW7shxgwda+yyKGGQFCBaCDh"
+  key_name   = "Ubuntu2K"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCIsNloY7jGCeZr8dEDw3ixabeVT1uNPAuSgpsglJjvwyXuRg4sX9URYm/nrUx2U3YWWa1SHBHLRUki8ZlVQQs3f0DxPp9GH8ypnuFgqx6GtUJDnJhxb+tzWyHL9v/7cNplfCR8XzGDtzxcp1nVmhhCZu7WwbONI/gfMBF1nhUmw8YCILQ6zIlMj0buVX7wzLSI7YlFb71CRgDzP3uWT3y30rwrrn4h0ouWYteqC99GV3OZh1+RrXyCxS15TwJ8sc7e5WkW52+5blg4/dsyfJlvpEkXZfQDqxWrZget7TPDTCsjwrMcT6vKhtIi2t8MUkdjYO5iGUO+X3Wo3C/WVv2Z"
 }
 
 resource "aws_instance" "web1" {
-  ami           = "ami-05a5f6298acdb05b6"
+  ami           = "ami-0866a3c8686eaeeba"
   instance_type = "t2.micro"
   key_name = "Ubuntu2KP"
   depends_on = [aws_key_pair.deployer]
