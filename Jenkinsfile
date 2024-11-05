@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define the path to the Terraform configuration directory
-        TF_CONFIG_PATH = "EC2/Single_EC2"
+        TF_CONFIG_PATH = "EC2/multiple_EC2"
         }
 
     stages {
